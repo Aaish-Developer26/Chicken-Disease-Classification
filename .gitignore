@@ -1,0 +1,32 @@
+# Python bytecode
+*.pyc
+__pycache__
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+build/
+
+# Virtual environment
+.env
+.venv
+.chicken
+env/
+venv/
+chicken/
+
+# YAML or configuration secrets (optional - include only if not versioning these)
+.env
+*.env
+
+# Installer Logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+#Jupyter Notebooks
+.ipynb_checkpoints
+
+# Artifacts / data / models
+artifacts/*
+Data/
+

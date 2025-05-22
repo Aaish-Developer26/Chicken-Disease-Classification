@@ -1,0 +1,19 @@
+tensorflow
+pandas 
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+python-box==6.0.2
+pyYAML
+tqdm
+boto3
+dotenv
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+Flask
+Flask-Cors
+-e . #This is to install setup.py file (The setup.py file will help installing the src/CnnClassifier folder as local package)
