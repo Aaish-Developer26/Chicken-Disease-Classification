@@ -1,1 +1,8 @@
-key: val
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] # As per VGG 16 model.
+BATCH_SIZE: 16 # Increase batch size depending your machine performance.
+INCLUDE_TOP: False # Since using a pre-trained model instead of training from scratch.
+EPOCHS: 1
+CLASSES: 2 # Two classes: Coccidiousis and Healthy
+WEIGHTS: imagenet # Image classification model usually trained on image data.
+LEARNING_RATE: 0.01 

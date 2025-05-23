@@ -2,6 +2,12 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: s3://ashuchicken/Data.zip
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  source_URL: s3://ashuchicken/Data.zip # Downloading the Data.zip folder from the AWS s3 Bucket.
+  local_data_file: artifacts/data_ingestion/data.zip # Downloaded folder being saved inside artifacts.
+  unzip_dir: artifacts/data_ingestion # Downloaded, Unzipped and saved.
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5 # Downloading VGG 16 model and saving it.
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5 # Adding custom layer over the model.
+
