@@ -92,3 +92,71 @@ x==========x}
 {2025-05-24 18:51:51,028}: INFO: mutuals: created directory at: artifacts}
 {2025-05-24 18:51:51,032}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
 {2025-05-24 18:51:51,035}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:20:37,806}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:20:37,825}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:20:37,827}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:20:37,829}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:20:37,831}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:23:14,231}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:23:14,235}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:23:14,237}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:23:14,239}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:23:14,240}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:29:03,296}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:29:03,299}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:29:03,301}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:29:03,302}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:29:03,304}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:31:19,342}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:31:19,342}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:31:19,342}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:31:19,342}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:31:19,349}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:39:17,702}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:39:17,712}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:39:17,714}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:39:17,715}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:39:17,716}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:39:17,718}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-27 00:44:42,632}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:44:42,637}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:44:42,637}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:44:42,637}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:44:42,641}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:44:42,641}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-27 00:52:39,022}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 00:52:39,027}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 00:52:39,029}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 00:52:39,031}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 00:52:39,032}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 00:52:39,034}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-27 01:30:23,932}: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<}
+{2025-05-27 01:30:23,935}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 01:30:23,937}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 01:30:23,938}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 01:30:23,938}: INFO: mutuals: created directory at: artifacts/data_ingestion}
+{2025-05-27 01:31:48,113}: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded from S3!}
+{2025-05-27 01:31:49,118}: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x}
+{2025-05-27 01:31:49,119}: INFO: main: *************}
+{2025-05-27 01:31:49,119}: INFO: main: >>>>>> stage Base Model Preparation started <<<<<<}
+{2025-05-27 01:31:49,124}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 01:31:49,127}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 01:31:49,128}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 01:31:49,129}: INFO: mutuals: created directory at: artifacts/prepare_base_model}
+{2025-05-27 01:31:49,621}: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.}
+{2025-05-27 01:31:49,822}: INFO: main: >>>>>> stage Base Model Preparation completed <<<<<<
+
+x==========x}
+{2025-05-27 01:31:49,823}: INFO: main: *******************}
+{2025-05-27 01:31:49,823}: INFO: main: >>>>>> stage Training started <<<<<<}
+{2025-05-27 01:31:49,825}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-27 01:31:49,827}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-27 01:31:49,828}: INFO: mutuals: created directory at: artifacts}
+{2025-05-27 01:31:49,829}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-27 01:31:49,830}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-27 01:31:49,832}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-27 01:35:32,611}: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x}
