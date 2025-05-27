@@ -1,0 +1,8 @@
+Step1: python -m venv chicken (create virtual env)
+Step2: chicken\scripts\activate (To activate virutal env)
+Step3: Get your access key and secret key for downloading the data from AWS S3 Bucket (save them .env)
+Step4: python main.py (To run the main endpoint file)
+Step5: dvc init (To initialize DVC)
+Step6: dvc repro (It will execute the pipeline one-by-one)
+Step7: Refer to dev.lock file that will be created after running the above command which includes all the metadata up your RAM.
+Step8: dvc dag (This command will display the dependency graph for your project)

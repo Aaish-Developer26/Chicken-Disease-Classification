@@ -206,3 +206,41 @@ x==========x}
 {2025-05-27 12:35:05,501}: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x}
+{2025-05-28 02:10:12,980}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<}
+{2025-05-28 02:10:12,984}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 02:10:12,987}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 02:10:12,988}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 02:10:12,988}: INFO: mutuals: created directory at: artifacts/data_ingestion}
+{2025-05-28 02:11:15,726}: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded from S3!}
+{2025-05-28 02:11:16,748}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<
+
+x==========x}
+{2025-05-28 02:11:42,987}: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation started <<<<<<}
+{2025-05-28 02:11:42,991}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 02:11:42,994}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 02:11:42,995}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 02:11:42,996}: INFO: mutuals: created directory at: artifacts/prepare_base_model}
+{2025-05-28 02:11:43,619}: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.}
+{2025-05-28 02:11:43,842}: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation started <<<<<<
+
+x==========x}
+{2025-05-28 02:11:49,707}: INFO: stage_03_training: *******************}
+{2025-05-28 02:11:49,707}: INFO: stage_03_training: >>>>>> stage Training started <<<<<<}
+{2025-05-28 02:11:49,711}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 02:11:49,714}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 02:11:49,715}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 02:11:49,716}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-28 02:11:49,717}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-28 02:11:49,721}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-28 02:15:39,819}: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x}
+{2025-05-28 02:15:46,249}: INFO: stage_04_evaluation: *******************}
+{2025-05-28 02:15:46,249}: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<}
+{2025-05-28 02:15:46,253}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 02:15:46,255}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 02:15:46,256}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 02:17:00,389}: INFO: mutuals: json file saved at: scores.json}
+{2025-05-28 02:17:00,391}: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x}
