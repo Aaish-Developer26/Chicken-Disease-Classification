@@ -260,3 +260,111 @@ x==========x}
 {2025-05-28 03:01:45,395}: INFO: _internal: 127.0.0.1 - - [28/May/2025 03:01:45] "POST /predict HTTP/1.1" 200 -}
 {2025-05-28 03:02:11,547}: INFO: _internal: 127.0.0.1 - - [28/May/2025 03:02:11] "POST /predict HTTP/1.1" 200 -}
 {2025-05-28 03:02:27,063}: INFO: _internal: 127.0.0.1 - - [28/May/2025 03:02:27] "POST /predict HTTP/1.1" 200 -}
+{2025-05-28 18:09:29,177}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<}
+{2025-05-28 18:09:29,183}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:09:29,188}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:09:29,190}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:09:29,191}: INFO: mutuals: created directory at: artifacts/data_ingestion}
+{2025-05-28 18:09:31,672}: ERROR: stage_01_data_ingestion: Unable to locate credentials}
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 22, in <module>
+    obj.main()
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "c:\users\elitebook\onedrive\documents\chicken disease classification\src\CnnClassifier\components\data_ingestion.py", line 33, in download_file
+    self.s3_client.download_file(
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\boto3\s3\inject.py", line 223, in download_file
+    return transfer.download_file(
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\boto3\s3\transfer.py", line 406, in download_file
+    future.result()
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\s3transfer\futures.py", line 287, in result
+    raise self._exception
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\s3transfer\tasks.py", line 272, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\s3transfer\download.py", line 355, in _submit
+    response = client.head_object(
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\client.py", line 595, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\client.py", line 1040, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\client.py", line 1064, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\endpoint.py", line 196, in _send_request
+    request = self.create_request(request_dict, operation_model)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\endpoint.py", line 132, in create_request
+    self._event_emitter.emit(
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\signers.py", line 106, in handler
+    return self.sign(operation_name, request)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\signers.py", line 198, in sign
+    auth.add_auth(request)
+  File "C:\Users\EliteBook\OneDrive\Documents\Chicken Disease Classification\chicken\lib\site-packages\botocore\auth.py", line 424, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+{2025-05-28 18:13:21,554}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<}
+{2025-05-28 18:13:21,559}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:13:21,559}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:13:21,564}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:13:21,565}: INFO: mutuals: created directory at: artifacts/data_ingestion}
+{2025-05-28 18:14:58,180}: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded from S3!}
+{2025-05-28 18:15:00,183}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<
+
+x==========x}
+{2025-05-28 18:25:36,077}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<}
+{2025-05-28 18:25:36,080}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:25:36,080}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:25:36,080}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:25:36,086}: INFO: mutuals: created directory at: artifacts/data_ingestion}
+{2025-05-28 18:25:36,477}: INFO: data_ingestion: File already exists of size: ~ 34913 KB}
+{2025-05-28 18:25:38,384}: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x}
+{2025-05-28 18:26:13,128}: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation started <<<<<<}
+{2025-05-28 18:26:13,142}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:26:13,158}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:26:13,160}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:26:13,161}: INFO: mutuals: created directory at: artifacts/prepare_base_model}
+{2025-05-28 18:26:14,726}: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.}
+{2025-05-28 18:26:15,176}: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation started <<<<<<
+
+x==========x}
+{2025-05-28 18:26:28,270}: INFO: stage_03_training: *******************}
+{2025-05-28 18:26:28,272}: INFO: stage_03_training: >>>>>> stage Training started <<<<<<}
+{2025-05-28 18:26:28,275}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:26:28,280}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:26:28,281}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:26:28,296}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\checkpoint_dir}
+{2025-05-28 18:26:28,299}: INFO: mutuals: created directory at: artifacts\prepare_callbacks\tensorboard_root_log_dir}
+{2025-05-28 18:26:28,310}: INFO: mutuals: created directory at: artifacts\training}
+{2025-05-28 18:30:21,489}: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x}
+{2025-05-28 18:30:33,263}: INFO: stage_04_evaluation: *******************}
+{2025-05-28 18:30:33,264}: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<}
+{2025-05-28 18:30:33,266}: INFO: mutuals: yaml file: config\config.yaml loaded successfully}
+{2025-05-28 18:30:33,271}: INFO: mutuals: yaml file: params.yaml loaded successfully}
+{2025-05-28 18:30:33,273}: INFO: mutuals: created directory at: artifacts}
+{2025-05-28 18:31:46,792}: INFO: mutuals: json file saved at: scores.json}
+{2025-05-28 18:31:46,793}: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x}
+{2025-05-28 18:38:52,468}: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.38:8080}
+{2025-05-28 18:38:52,469}: INFO: _internal: [33mPress CTRL+C to quit[0m}
+{2025-05-28 18:38:57,942}: INFO: _internal: 127.0.0.1 - - [28/May/2025 18:38:57] "GET / HTTP/1.1" 200 -}
+{2025-05-28 18:40:25,013}: INFO: _internal: 127.0.0.1 - - [28/May/2025 18:40:25] "POST /predict HTTP/1.1" 200 -}
