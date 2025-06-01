@@ -10,6 +10,7 @@
 7. Update the pipeline
 8. Update the main.py
 9. Update the dvc.yaml
+<<<<<<< Updated upstream
 ├── artifacts/ # DVC-managed data and model artifacts
 ├── src/ # Source code including data pipeline, training, etc.
 ├── app.py # Streamlit web application for disease prediction
@@ -135,6 +136,7 @@ AWS_REGION = us-east-1
 AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
 ECR_REPOSITORY_NAME = simple-app
+
 
 
 
